@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query'
 import ArbolProyect from '../components/ArbolProyect'
 
 export default function AdminLayout() {
+  window.location.reload()
   const { data, isLoading, isError } = useQuery({
     queryFn: getUser,
     queryKey: ['user'],
