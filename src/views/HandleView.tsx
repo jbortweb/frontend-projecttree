@@ -10,7 +10,7 @@ export default function HandleView() {
   const { data, error, isLoading } = useQuery({
     queryFn: () => getUserByHandle(handle),
     queryKey: ['handle', handle],
-    retry: 1,
+    retry: 2,
   })
 
   if (isLoading) return <p className="text-white text-center">Cargando...</p>
