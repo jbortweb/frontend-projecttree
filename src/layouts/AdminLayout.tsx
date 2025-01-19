@@ -9,7 +9,7 @@ export default function AdminLayout() {
     queryFn: getUser,
     queryKey: ['user'],
     retry: 2,
-    refetchOnWindowFocus: false,
+    refetchOnWindowFocus: true,
   })
 
   if (isLoading) return 'Cargando...'
