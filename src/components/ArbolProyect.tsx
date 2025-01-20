@@ -26,7 +26,7 @@ export default function ArbolProyect({ data }: ArbolProyectProps) {
     }
 
     fetchProjects()
-  }, [projects])
+  }, [])
 
   return (
     <>
