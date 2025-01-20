@@ -12,7 +12,6 @@ type ArbolProyectProps = {
 }
 
 export default function ArbolProyect({ data }: ArbolProyectProps) {
-  window.location.reload()
   const [projects, setProjects] = useState<Project[]>([])
 
   useEffect(() => {
